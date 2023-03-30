@@ -1,0 +1,14 @@
+
+{% extends "parent.html" %}
+{% block content %}
+<ou>
+    {% for items in items %}
+    <li><strong>{{items}}</strong></li>
+    {% endfor %}
+</ou>
+<p class="ms"><strong>Wyślij wiadomość</strong></p>
+<form action="" method="POST">
+    <input name="comment" type="text">
+    <input type="submit">
+</form>
+{% endblock %}
